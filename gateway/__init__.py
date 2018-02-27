@@ -1,0 +1,41 @@
+# The MIT License
+#
+# Copyright (c) 2017 Tarlan Payments.
+#
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included in
+# all copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+# THE SOFTWARE.
+
+"""
+Tarlan Payments Payment Gateway integration library.
+"""
+
+from gateway.client import Client
+
+# Tarlan Payments API configuration
+API_BASE_URL = 'https://api.sandbox.tarlanpayments.kz/'
+API_VERSION = 'v3.0'
+
+# Tarlan Payments HTTP transport configuration
+# Implemented:
+# requests
+# pycurl
+HTTP_TRANSPORT_IMPLEMENTATION = 'requests'
+HTTP_TIME_OUT = 60
+HTTP_VERIFY_SSL_CERTS = False
+# Example: { 'http': 'http://<user>:<pass>@<proxy>:<port>', 'https': 'http://<user>:<pass>@<proxy>:<port>' }
+HTTP_PROXY = None
