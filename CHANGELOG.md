@@ -1,3 +1,11 @@
+##### Version 1.3.1 (2019-01-23)
+
+	Allow sending of merchant transaction ID for following methods:
+	 - DMS charge
+	 - DMS Hold cancel
+	 - Reversal
+	 - Refund
+
 ##### Version 1.3.0 (2018-12-13)
 
 	Fix authorization: use string type account GUID
